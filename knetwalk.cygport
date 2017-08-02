@@ -2,7 +2,9 @@ inherit kf5
 
 NAME="knetwalk"
 VERSION=17.04.3
-RELEASE=1
+RELEASE=2
 CATEGORY="Games"
 SUMMARY="KDE Netwalk game"
 DESCRIPTION="Part of the KDE games suite"
+
+PATCH_URI="17.04-bko356489.patch"

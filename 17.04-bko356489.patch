@@ -1,0 +1,12 @@
+https://bugs.kde.org/show_bug.cgi?id=356489
+
+--- origsrc/knetwalk-17.04.3/src/mainwindow.cpp	2017-03-07 23:01:26.000000000 -0600
++++ src/knetwalk-17.04.3/src/mainwindow.cpp	2017-08-01 19:28:41.515602100 -0500
+@@ -98,6 +98,7 @@ MainWindow::MainWindow(QWidget *parent)
+     KgDifficultyGUI::init(this);
+     connect(Kg::difficulty(), &KgDifficulty::currentLevelChanged, this, &MainWindow::startNewGame);
+ 
++    qApp->setAttribute(Qt::AA_DontCreateNativeWidgetSiblings, true);
+ 
+     setCentralWidget(m_view);
+ 
