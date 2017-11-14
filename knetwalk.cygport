@@ -1,8 +1,8 @@
 inherit kf5
 
 NAME="knetwalk"
-VERSION=17.04.3
-RELEASE=2
+VERSION=17.08.3
+RELEASE=1
 CATEGORY="Games"
 SUMMARY="KDE Netwalk game"
 DESCRIPTION="Part of the KDE games suite"
